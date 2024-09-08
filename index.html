@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>G20 Brasil 2024</title>
+</head>
+<body>
+    <header>
+        <h1>G20 Brasil 2024</h1>
+    </header>
+    <main>
+        <section>
+            <div style="display: flex; gap: 10px; margin-bottom: 1rem;">
+                <button onclick="conceito()">O que é?</button>
+                <button onclick="temas()">Temas abordados</button>
+                <button onclick="lista()">Países participantes</button>
+                <button><a href="https://www.g20.org/pt-br" target="_blank" style="text-decoration: none; color: inherit;">Saiba mais</a></button>
+            </div>
+            <input type="text" placeholder="Digite um dos paises participantes para saber mais" id="campo-pesquisa">
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+        </section>
+    </main>
+    <footer>
+        <p>G20 Brasil 2024. Projeto de estudo desenvolvido por Walter Resquin.</p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
